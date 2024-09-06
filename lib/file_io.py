@@ -12,3 +12,8 @@ def read_file(file_name):
     with open(f"{file_name}.txt", 'r')as file:
        return file.read()
     pass
+write_file(file_name="logfile", file_content="Log 1: 5 bananas added " )
+append_file(file_name="logfile", append_content="Log 2: 3 bananas subtracted")
+
+content = read_file(file_name="logfile")
+print(content)
